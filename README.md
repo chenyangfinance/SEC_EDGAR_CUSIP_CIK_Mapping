@@ -23,11 +23,14 @@ A referee from Journal of Baning and Finance asks us to incorproate historical h
 
 # Some issues about this code
 1. The code costs time very much.
+
    1.1 I try to only use the first 200 lines of each report and remove all 13D/A and 13G/A (additional files)
    
    1.2 It still take me more than 10 hours to run it locally, with two laptops (one M2 chip Macbook pro and one 16G memory AMD R9 Win)
    
 2. I see some missing values there, but it is not a big issue for me meanwhile. I will fix this later on.
 3. The code is difficult to deploy on server.
+   
    3.1 I tried to deploy it on AWS EC2 but failed every way. It seems EDGAR will detect this and ban the scraping. I will try to fix this later on.
+
 4. When using the mapping, it is notable that the date is not continuous, as these dates are only when 13D or 13G is published. So filling up is necessary.
